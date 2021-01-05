@@ -304,7 +304,14 @@ class vrp_research(object):
         return walk_forward_returns, perf_stats
           
     
-if __name__ == "__main__":                     
+if __name__ == "__main__":     
+
+    strategy = vrp_research(vix_cap_range = [10, 15, 20, 25],
+                            snp_cap_range = [10, 15, 20, 25],
+                            num_samples_per_period=100,
+                            min_sample_size=100,prop_block_bootstrap=0.10,
+                            days_block=252,starting_index=22
+                            )                 
     pass
 
 
